@@ -19,6 +19,90 @@
 			color: #18325E;
 		}
 	}
+	&__dropdownWrap{
+		position: relative;
+	}
+	&__dropdown{
+		position: absolute;
+		top: 137%;
+		left: -25px;
+		width: 216px;
+		flex: none;
+		z-index: 10;
+		display: none;
+	}
+}
+
+.block-socials{
+	display: flex;
+	&__el{
+		margin-right: 29px;
+	}
+}
+
+.tel{
+	font-family: 'Roboto';
+	font-weight: bold;
+	font-size: 16px;
+	color: #252526;
+}
+
+.links-2{
+	&__el{
+		margin-bottom: 14px;
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+	&__link{
+		font-family: 'Roboto';
+		font-size: 14px;
+		letter-spacing: 0.03em;
+		color: #252526;
+		transition: .2s;
+		&:hover{
+			font-weight: bold;
+			color: #18325E;
+		}
+	}
+	&__el:first-child{
+		a{
+			font-weight: bold;
+		}
+	}
+}
+
+.dropdown-menu-el{
+	background: #FFFFFF;
+	box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.2);
+	border-radius: 32px;
+	text-align: left;
+	padding: 29px 24px;
+	&__links{
+		border-bottom: 1px solid #252526;
+		padding-bottom: 11px;
+		&-el{
+			margin-bottom: 14px;
+			&:last-child{
+				margin-bottom: 0;
+			}
+		}
+		a{
+			font-family: 'Roboto';
+			font-size: 14px;
+			letter-spacing: 0.03em;
+			color: #252526;
+			transition: .2s;
+			&:hover{
+				font-weight: bold;
+				color: #18325E;
+			}
+		}
+	}
+	&__bottom{
+		padding: 10px 0;
+		padding-bottom: 0;
+	}
 }
 
 .title{
@@ -28,6 +112,12 @@
 	line-height: 1.2;
 	&_main{
 		font-size: 48px;
+	}
+	&_sec{
+		font-size: 32px;
+	}
+	&_small{
+		font-size: 24px;
 	}
 }
 
@@ -82,4 +172,116 @@
 
 .text-bold{
 	font-weight: bold;
+}
+
+.ul-descrp{
+	padding-left: 11px;
+	li{
+		font-family: 'Roboto';
+		font-size: 18px;
+		color: #252526;
+		line-height: 1.2;
+		position: relative;
+		padding-left: 16px;
+		margin-bottom: 6px;
+		&::before{
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 8px;
+			width: 4px;
+			height: 4px;
+			border-radius: 100%;
+			background: #252526;
+		}
+	}
+}
+
+.form-inp{
+	font-family: 'Roboto';
+	font-size: 16px;
+	color: #252526;
+	padding: 15px 20px 0 15px;
+	background: #FFFFFF;
+	border: 1px solid rgba(#18325E, 0.8);
+	border-radius: 10px;
+	width: 100%;
+	height: 55px;
+}
+
+.form-el{
+	position: relative;
+	width: 100%;
+	display: block;
+	&__placeholder{
+		font-family: 'Roboto';
+		font-size: 14px;
+		color: #252526;
+		opacity: 0.6;
+		position: absolute;
+		top: 9px;
+    	left: 16px;
+	}
+}
+
+.block-form{
+	&__el{
+		margin-bottom: 17px;
+	}
+	&__checkbox{
+		margin-top: 28px;
+		margin-bottom: 30px;
+	}
+	&__btn{
+		padding-top: 10px;
+		padding-bottom: 10px;
+		min-height: 55px;
+	}
+}
+
+.link{
+	color: #18325E;
+	text-decoration-line: underline;
+}
+
+.checkbox-def{
+	flex: none;
+	width: 16px;
+	height: 16px;
+	border: 1px solid #18325E;
+	border-radius: 2px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	&__dec{
+		width: 11px;
+		height: 10px;
+		display: block;
+		background: url('../img/icons/check.svg') no-repeat center / contain;
+		opacity: 0;
+	}
+	&__inp{
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		z-index: -999;
+		visibility: hidden;
+		&:checked{
+			& + .checkbox-def__dec{
+				opacity: 1;
+			}
+		}
+	}
+}
+
+.checkbox-el{
+	display: flex;
+	align-items: center;
+	&__text{
+		font-family: 'Roboto';
+		font-size: 16px;
+		color: #252526;
+		margin-left: 16px;
+	}
 }

@@ -36,7 +36,7 @@ function getScrollBarWidth(){
 };
 
 $('head').append('<style>.noscroll{margin-right: '+getScrollBarWidth()+'px;}</style>');
-$('head').append('<style>.noscroll .top-menu{padding-right: '+getScrollBarWidth()+'px;}</style>');
+// $('head').append('<style>.noscroll .top-menu{padding-right: '+getScrollBarWidth()+'px;}</style>');
 
 
 // jQuery(function($){
@@ -57,7 +57,64 @@ $('head').append('<style>.noscroll .top-menu{padding-right: '+getScrollBarWidth(
 
 // });
 
+let dropFix;
 
+$('.links-menu__dropdownWrap').on('mouseenter', function(){
+  clearTimeout(dropFix);
+  $(this).find('.links-menu__dropdown').fadeIn(400);
+});
+$('.links-menu__dropdownWrap').on('mouseleave', function(){
+  clearTimeout(dropFix);
+  dropFix = setTimeout(drop, 50, $(this));
+  function drop(t){
+    $(t).find('.links-menu__dropdown').fadeOut(400);
+  }
+});
 
+$('.btnOpen').on('click', function(){
+  $($(this).data('modal')).fadeIn(400);
+  setNoscroll();
+  return false;
+});
+
+$('.modal-content__close, .modal__overlay').on('click', function(){
+  $(this).closest('.modal').fadeOut(400);
+  unsetNoscroll();
+  return false;
+});
+
+function checkMenu(){
+  if ( $(window).scrollTop() > 1 ) {
+    if ( $(window).width() > 600 ) {
+      $('.top-menu').addClass('top-menu_fixed');
+      $('.top-menu_home').addClass('top-menu_active');
+    }
+  }else{
+    if ( $(window).width() > 600 ) {
+      $('.top-menu').removeClass('top-menu_fixed');
+      $('.top-menu_home').removeClass('top-menu_active');
+    }
+  }
+}
+checkMenu();
+
+$(window).scroll(function(){
+  checkMenu();
+});
+
+$('.top-menu__btn').on('click', function(){
+  $('.top-menu').find('.top-menu__btn').hide();
+  $('.top-menu').find('.top-menu__close').show();
+  $('.nav-menu').addClass('active');
+  setNoscroll();
+  return false;
+});
+$('.top-menu__close').on('click', function(){
+  $('.top-menu').find('.top-menu__btn').show();
+  $('.top-menu').find('.top-menu__close').hide();
+  $('.nav-menu').removeClass('active');
+  unsetNoscroll();
+  return false;
+});
 
 }); //end ready

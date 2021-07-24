@@ -11,20 +11,53 @@
 
 
 <main class="wrapper">
-<header class="top-menu">
+<!-- top-menu_active top-menu_fixed -->
+<header class="top-menu top-menu_home">
 	<div class="container">
 		<div class="top-menu__wrap">
 			<div class="top-menu__content">
-				<a href="#" class="top-menu__link"><img src="../img/logo.svg" alt="" class="top-menu__logo"></a>
+				<a href="#" class="top-menu__linkLogo"><img src="../img/logo.svg" alt="" class="top-menu__logo"></a>
 				<nav class="top-menu__nav nav-menu">
 					<ul class="nav-menu__link links-menu">
-						<li class="links-menu__el"><a href="#" class="links-menu__link">Services</a></li>
+						<li class="links-menu__el links-menu__dropdownWrap">
+							<a href="#" class="links-menu__link">Services</a>
+							<div class="links-menu__dropdown dropdown-menu-el">
+								<div class="dropdown-menu-el__body">
+									<ul class="dropdown-menu-el__links">
+										<li class="dropdown-menu-el__links-el"><a href="#">Financial planing</a></li>
+										<li class="dropdown-menu-el__links-el"><a href="#">Retirement planing </a></li>
+										<li class="dropdown-menu-el__links-el"><a href="#">Capital investments </a></li>
+										<li class="dropdown-menu-el__links-el"><a href="#">Trusts and will </a></li>
+										<li class="dropdown-menu-el__links-el"><a href="#">Educational planing </a></li>
+										<li class="dropdown-menu-el__links-el"><a href="#">Plan B savings </a></li>
+										<li class="dropdown-menu-el__links-el"><a href="#">Wealth management </a></li>
+									</ul>
+									<ul class="dropdown-menu-el__bottom links-2">
+										<li class="links-2__el"><a href="#" class="links-2__link">Protection</a></li>
+										<li class="links-2__el"><a href="#" class="links-2__link">Health</a></li>
+										<li class="links-2__el"><a href="#" class="links-2__link">Travel</a></li>
+										<li class="links-2__el"><a href="#" class="links-2__link">Income</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
 						<li class="links-menu__el"><a href="#" class="links-menu__link">Asset management</a></li>
 						<li class="links-menu__el"><a href="#" class="links-menu__link">PWP portal</a></li>
 						<li class="links-menu__el"><a href="#" class="links-menu__link">Resources</a></li>
 						<li class="links-menu__el"><a href="#" class="links-menu__link">About GPI</a></li>
 					</ul>
+					<div class="nav-menu__mob">
+						<a href="tel:+421233527827" class="nav-menu__tel tel">+421 (2) 335 278 27</a>
+						<a href="mailto:office@gpieurope.eu " class="nav-menu__mail text-info">office@gpieurope.eu </a>
+						<div class="block-socials">
+							<a href="#" target="_blank" class="block-socials__el"><img src="../img/block-socials/inst.svg" alt="" class="block-socials__icon"></a>
+							<a href="#" target="_blank" class="block-socials__el"><img src="../img/block-socials/fb.svg" alt="" class="block-socials__icon"></a>
+							<a href="#" target="_blank" class="block-socials__el"><img src="../img/block-socials/in.svg" alt="" class="block-socials__icon"></a>
+						</div>
+					</div>
 				</nav>
+				<div class="top-menu__btn">Menu</div>
+				<svg class="top-menu__close" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L17 17" stroke="#18325E" stroke-width="1.6"/><path d="M17 1L1 17" stroke="#18325E" stroke-width="1.6"/></svg>
 			</div>
 		</div>
 	</div>
@@ -35,12 +68,14 @@
 			<div class="sec-header__content">
 				<h1 class="title title_main sec-header__title">Online financial advice for individuals</h1>
 				<p class="text-sec">GPI Europe offers astute advice across a range of investment and portfolio services & devise intelligent solutions for your lifetime journey.</p>
-				<a href="#" class="btn sec-header__btn">Book a free consultation</a>
-				<div class="info-dec sec-header__info">
-					We are rated Excellent on 
-					<img class="info-dec__img" src="../img/icons/starText.svg" alt="">
+				<a href="#" class="btn sec-header__btn btnOpen" data-modal="#modal-call">Book a free consultation</a>
+				<div class="sec-header__bottomInfo">
+					<div class="info-dec sec-header__info">
+						We are rated Excellent on 
+						<img class="info-dec__img" src="../img/icons/starText.svg" alt="">
+					</div>
+					<p class="text-info sec-header__bottomText">TrustScore <span class="text-bold">4,5</span></p>
 				</div>
-				<p class="text-info sec-header__bottomText">TrustScore <span class="text-bold">4,5</span></p>
 			</div>
 		</div>
 	</div>
@@ -50,10 +85,55 @@
 
 </main>
 
+<!-- modal start -->
+<div class="modal" id="modal-call">
+	<div class="modal__wrap">
+		<div class="modal__content modal-content">
+			<div class="modal-content__body">
+				<div class="modal-content__top">
+					<div class="title title_sec">Request your free call today </div>
+					<svg class="modal-content__close" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16 1.61143L14.3886 0L8 6.38857L1.61143 0L0 1.61143L6.38857 8L0 14.3886L1.61143 16L8 9.61143L14.3886 16L16 14.3886L9.61143 8L16 1.61143Z" fill="#252526"/></svg>
+				</div>
+				<div class="modal-content__content">
+					<div class="title title_small modal-content__content-title">What does a call include?</div>
+					<ul class="ul-descrp">
+						<li>Explains our services</li>
+						<li>Chat about your financial objectives</li>
+						<li>Directs towards more indebth conversation</li>
+					</ul>
+					<div class="modal-content__form block-form">
+						<div class="block-form__el form-el">
+							<div class="form-el__placeholder">Name</div>
+							<input type="text" class="form-el__inp inp form-inp">
+						</div>
+						<div class="block-form__el form-el">
+							<div class="form-el__placeholder">Email</div>
+							<input type="text" class="form-el__inp inp form-inp">
+						</div>
+						<div class="block-form__el form-el">
+							<div class="form-el__placeholder">Phone number</div>
+							<input type="text" class="form-el__inp inp form-inp">
+						</div>
+						<label class="block-form__checkbox checkbox-el">
+							<span class="checkbox-el__checkbox checkbox-def">
+								<input type="checkbox" class="checkbox-def__inp" required>
+								<span class="checkbox-def__dec"></span>
+							</span>
+							<span class="checkbox-el__text">I Agree to the <a href="#" class="link">Privacy Policy</a></span>
+						</label>
+						<button class="block-form__btn btn">Request a call back</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal__overlay overlay"></div>
+	</div>
+</div>
+<!-- modal end -->
 
 <script src="../js/jquery-3.6.0.min.js"></script>
 <script src="../js/main.js"></script>
 
-<script src="/PixelPerfect/pixelScreen.js"></script>
+<!-- <script src="/PixelPerfect/pixelScreen.js"></script> -->
 </body>
 </html>
