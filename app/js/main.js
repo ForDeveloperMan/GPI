@@ -117,4 +117,65 @@ $('.top-menu__close').on('click', function(){
   return false;
 });
 
+
+$('.block-reviews').owlCarousel({
+  items: 1,
+  nav: true,
+  navText: ['<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><circle r="23.5" transform="matrix(-1 0 0 1 24 24)" stroke="#B39013"/><path d="M28.7992 33.6004L19.1992 24.0004L28.7992 14.4004" stroke="#B39013"/></svg>', '<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="24" cy="24" r="23.5" stroke="#B39013"/><path d="M19.2008 33.6004L28.8008 24.0004L19.2008 14.4004" stroke="#B39013"/></svg>'],
+  dots: true,
+  responsive: {
+    0: {
+      margin: 50,
+    },
+    601: {
+      margin: 0,
+    },
+  }
+});
+
+$('.form-el__inp').on('focus', function(){
+  var wrap = $(this).closest('.form-el');
+  wrap.addClass('active');
+});
+$('.form-el__inp').on('blur', function(){
+  var wrap = $(this).closest('.form-el');
+  if ( $(this).val() === '' || $(this).val() === null || $(this).val() === undefined || $(this).val() === false ) {
+    wrap.removeClass('active');
+  }else{
+    wrap.addClass('active');
+  }
+});
+
+
+if ( $(window).width() <= 600 ) {
+  $('.work-el').each(function(){
+    $(this).append('<svg class="work-el__btn" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12.5" cy="12.5" r="12" stroke="#B39013"/><line class="work-el__btn-line" x1="12.5" y1="6.5" x2="12.5" y2="18.5" stroke="#B39013" stroke-linecap="round"/><line x1="18.5" y1="12.5" x2="6.5" y2="12.5" stroke="#B39013" stroke-linecap="round"/></svg>');
+  });
+  $('.work-el__btn').on('click', function(){
+    var wrap = $(this).closest('.work-el');
+    if ( wrap.hasClass('active') ) {
+      wrap.removeClass('active');
+      wrap.find('.work-el__text').fadeOut(200);
+    }else{
+      wrap.addClass('active');
+      wrap.find('.work-el__text').fadeIn(200);
+    }
+    return false;
+  });
+}
+
+$('.message-info__close').on('click', function(){
+  $(this).closest('.message-info').fadeOut(400);
+  return false;
+});
+
+jQuery(function($){
+ $('body').mouseup(function (e){
+   var div = $('.message-info');
+   if (!div.is(e.target) && div.has(e.target).length === 0) {
+       $('.message-info').fadeOut(400);
+    }
+  });
+ });
+
 }); //end ready
