@@ -178,4 +178,27 @@ jQuery(function($){
   });
  });
 
+
+$('.question-el__top').on('click', function(){
+  var wrap = $(this).closest('.question-el');
+  if ( wrap.hasClass('active') ) {
+    wrap.removeClass('active');
+    wrap.find('.question-el__body').slideUp(200);
+  }else{
+    wrap.addClass('active');
+    wrap.find('.question-el__body').slideDown(200);
+  }
+  return false;
+});
+
+// $('.sec-services-page__tabs .links-menu__link').on('click', function(){
+//   var wrapAll = $(this).closest('.sec-services-page__tabs');
+//   var wrap = $(this).closest('.links-menu__el');
+//   wrapAll.find('.links-menu__link').removeClass('active');
+//   $(this).addClass('active')
+//   $('.sec-services-page__content').find('.sec-services-page__content-el').hide();
+//   $('.sec-services-page__content').find('.sec-services-page__content-el').eq(wrap.index()).fadeIn(400);
+//   return false;
+// });
+
 }); //end ready

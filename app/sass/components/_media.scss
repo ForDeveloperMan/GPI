@@ -76,6 +76,10 @@
 	.sec-services__wrap{
 		padding-top: 50px;
 	}
+
+	.sec-header-page__links .links-menu__link{
+		font-size: 16px;
+	}
 }
 
 @media screen and (max-width: 768px){
@@ -143,6 +147,33 @@
 		max-width: 100%;
 		width: auto;
 	}
+
+	.sec-header-page{
+		.container{
+			max-width: 100%;
+		}
+	}
+	.sec-header-page__links{
+		overflow-x: auto;
+		.links-menu__link{
+
+		}
+		.links-menu__el{
+			margin-right: 24px;
+			margin-bottom: 20px;
+		}
+	}
+	.sec-header-page__content{
+		margin-top: 40px;
+	}
+	.sec-form_2{
+		.block-form-2{
+			display: block;
+		}
+	}
+	.sec-form_2 .sec-form__wrap{
+		padding: 50px 0;
+	}
 }
 
 @media screen and (max-width: 600px){
@@ -154,11 +185,20 @@
 	.top-menu__logo{
 		max-width: 58.3px;
 	}
+	.top-menu_active .top-menu__wrap{
+		padding: 6px 0;
+	}
 	.top-menu__wrap{
 		padding: 6px 0;
 	}
 	.top-menu__btn{
 		display: block;
+	}
+	.top-menu_active .top-menu__content{
+		justify-content: space-between;
+	}
+	.padding-top-menu-active{
+		padding-top: 56px;
 	}
 	.top-menu__content{
 		display: flex;
@@ -633,5 +673,94 @@
 	.message-info__close{
 		top: 14px;
 		right: 14px;
+	}
+	.sec-header-page__content{
+		margin-top: 21px;
+	}
+	.sec-header-page__title{
+		margin-bottom: 27px;
+	}
+	.sec-header-page__text{
+		letter-spacing: 0;
+	}
+	.sec-header-page{
+		background: #fff !important;
+	}
+	.sec-header-page__btn{
+		display: flex;
+		width: 100%;
+	}
+	.sec-header-page__wrap{
+		padding-bottom: 26px;
+	}
+	.block-descrp_black{
+		display: block;
+		.block-descrp__el{
+			width: 100%;
+			margin: 0;
+			max-width: 100%;
+			margin-bottom: 14px;
+		}
+		.descrp-el{
+			display: flex;
+			text-align: left;
+			&__icon{
+				width: 32px;
+				height: 32px;
+				margin-right: 16px;
+				margin-bottom: 0;
+				margin-top: 6px;
+			}
+			.descrp-el__text{
+				font-size: 16px;
+				line-height: 1.5;
+			}
+		}
+	}
+	.sec-plan{
+		padding: 22px 0;
+	}
+	.sec-plan__wrap{
+		padding: 31px 17px;
+	}
+	.sec-plan__content{
+		margin-top: 14px;
+	}
+	.wrap-article{
+		line-height: 1.5;
+	}
+	.sec-form_2{
+		.block-form-2__img{
+			max-width: 100%;
+			width: 100%;
+			margin: 0;
+			height: 214px;
+			object-fit: cover;
+			border-radius: 30px;
+		}
+	}
+	.sec-form_2 .sec-form__wrap{
+		padding: 29px 0;
+	}
+	.question-el__title{
+		font-size: 18px;
+	}
+	.sec-questions__wrap{
+		padding: 24px 0;
+	}
+	.question-el__btn{
+		width: 25px;
+		height: 25px;
+	}
+	.sec-questions__content{
+		margin-top: 17px;
+	}
+	.question-el__top{
+		padding: 21px 17px;
+		align-items: flex-start;
+	}
+	.question-el__body{
+		padding: 0 16px;
+		padding-bottom: 24px;
 	}
 }
