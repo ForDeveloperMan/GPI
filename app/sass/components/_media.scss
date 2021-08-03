@@ -80,6 +80,17 @@
 	.sec-header-page__links .links-menu__link{
 		font-size: 16px;
 	}
+	.block-options__el{
+		width: 50%;
+		margin-bottom: 16px;
+	}
+	.sec-options__wrap{
+		padding-top: 40px;
+	}
+
+	.sec-facts__wrap{
+		padding-top: 50px;
+	}
 }
 
 @media screen and (max-width: 768px){
@@ -173,6 +184,20 @@
 	}
 	.sec-form_2 .sec-form__wrap{
 		padding: 50px 0;
+	}
+
+	.block-options__el{
+		width: 100%;
+	}
+	.sec-files__wrap{
+		padding-bottom: 30px;
+	}
+
+	.block-facts__el{
+		width: 50%;
+	}
+	.sec-info__wrap{
+		padding-bottom: 50px;
 	}
 }
 
@@ -682,6 +707,7 @@
 	}
 	.sec-header-page__text{
 		letter-spacing: 0;
+		// line-height: 1.3;
 	}
 	.sec-header-page{
 		background: #fff !important;
@@ -714,6 +740,8 @@
 			.descrp-el__text{
 				font-size: 16px;
 				line-height: 1.5;
+				display: flex;
+				align-items: center;
 			}
 		}
 	}
@@ -762,5 +790,125 @@
 	.question-el__body{
 		padding: 0 16px;
 		padding-bottom: 24px;
+	}
+	.wrap-article h3{
+	    font-size: 24px;
+	}
+	.wrap-article p{
+		min-height: 22.7px;
+	}
+	.ul-dec li{
+		padding-left: 30px;
+	}
+	.sec-options__wrap{
+		padding-top: 28px;
+	}
+	.sec-options__content{
+		margin-top: 26px;
+	}
+	.options-el__title{
+		font-size: 24px;
+		text-align: center;
+		display: block;
+		width: 100%;
+	}
+	.options-el{
+		padding: 24px 25px;
+		box-shadow: 0px 6px 32px rgba(158, 149, 149, 0.36);
+	}
+	.options-el__body p{
+		margin-bottom: 22px;
+	}
+	.options-el__link{
+		margin-top: 13px;
+	}
+	.options-el__btn{
+		display: flex;
+		width: 100%;
+	}
+	.sec-files__top{
+		.title{
+			font-size: 24px;
+		}
+	}
+	.sec-files__wrap{
+		padding: 7px 0;
+	}
+	.block-files{
+		margin-left: -12px;
+		margin-right: -12px;
+	}
+	.block-files__el{
+		margin-right: 0;
+		width: 50%;
+		max-width: 100%;
+		padding: 0 12px;
+	}
+	.files-el__icon{
+		max-width: 26px;
+	}
+	.sec-files__content{
+		margin-top: 25px;
+	}
+	.files-el__text{
+		font-size: 14px;
+	}
+	.block-facts{
+		flex-wrap: nowrap;
+		overflow-x: auto;
+		margin: 0;
+		margin-bottom: -20px;
+	}
+	.block-facts__el{
+		width: 136px;
+		flex: none;
+		max-width: none;
+		padding: 0;
+		margin-bottom: 10px;
+		margin-right: 24px;
+	}
+	.sec-facts__wrap{
+		padding-top: 17px;
+	}
+	.facts-el__icon{
+		width: 48px;
+		height: 48px;
+	}
+	.sec-facts__content{
+		margin-top: 25px;
+	}
+	.facts-el__text{
+		font-size: 14px;
+	}
+	.sec-facts__wrap{
+		padding-bottom: 0;
+	}
+	.sec-info__wrap{
+		padding: 30px 0;
+		padding-bottom: 50px;
+	}
+	.sec-info__content{
+		margin-top: 19px;
+	}
+	.info-el{
+		padding: 22px 17px;
+		position: relative;
+		&__count{
+			position: absolute;
+			top: 22px;
+			left: 17px;
+		}
+		&__title{
+			padding-left: 47px;
+			min-height: 32px;
+
+		}
+	}
+	.info-el__title{
+		font-size: 16px;
+		margin-bottom: 7px;
+	}
+	.info-el__text{
+		line-height: 1.5;
 	}
 }
