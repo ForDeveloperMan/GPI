@@ -199,6 +199,14 @@
 	.sec-info__wrap{
 		padding-bottom: 50px;
 	}
+	body{
+		overflow-x: hidden;
+	}
+	.sec-header-page_2 .sec-header-page__wrap{
+		padding-bottom: 75px;
+		padding-top: 40px;
+
+	}
 }
 
 @media screen and (max-width: 600px){
@@ -660,8 +668,11 @@
 	.footer__wrap{
 		padding: 28px 0;
 	}
+	.footer__col-links{
+		margin-top: 12px;
+	}
 	.footer__col-title{
-		margin-bottom: 12px;
+		margin-bottom: 0;
 	}
 	.footer__col-links_main{
 		display: none;
@@ -670,7 +681,7 @@
 		}
 	}
 	.footer__col-block {
-	    margin-bottom: 26px;
+	    margin-bottom: 27px;
 	}
 	.footer__socials{
 		margin-top: 32px;
@@ -910,5 +921,113 @@
 	}
 	.info-el__text{
 		line-height: 1.5;
+	}
+	.sec-header-page_2 .sec-header-page__wrap{
+		padding: 55px 0;
+		padding-bottom: 17px;
+	}
+	.sec-header-page_2 .sec-header-page__content{
+		.sec-header-page__title{
+			padding: 0 20px;
+		}
+		.sec-header-page__title{
+			margin-bottom: 13px;
+		}
+	}
+	.sec-form_2 .sec-form__wrap{
+		padding-bottom: 49px;
+	}
+	.block-pwp{
+		margin: 0;
+		margin-bottom: -52px;
+	}
+	.block-pwp__el{
+		padding: 0;
+		margin: 0;
+		width: 192px;
+		min-width: 50%;
+		margin-bottom: 52px;
+		&:nth-child(1), &:nth-child(3){
+			width: 192px;
+			margin-right: -54px;
+			position: relative;
+			z-index: 10;
+		}
+	}
+	.sec-pwp__wrap{
+		padding: 42px 0;
+	}
+	.pwp-el{
+		text-align: left;
+	}
+	.pwp-el__title{
+		font-size: 14px;
+		line-height: 1.3;
+		margin-top: 13px;
+		padding-right: 40px;
+	}
+	.pwp-el__dec{
+		margin-left: 28px;
+		margin-top: 0;
+		height: 40px;
+	}
+	.block-pwp__el:nth-child(2n){
+		margin-top: 41px;
+	}
+	.sec-pwp__bottom-text{
+		font-size: 14px;
+	}
+	.sec-pwp__bottom{
+		padding: 0 2px;
+		margin-top: 44px;
+	}
+	.sec-pwp__bottom-btn{
+		width: 100%;
+		margin-top: 21px;
+	}
+	.sec-plan{
+		padding: 34px 0;
+	}
+
+	.modal_login{
+
+	}
+	.modal_login .modal__wrap{
+		padding-top: 40px;
+		padding-left: 16px;
+		padding-right: 16px;
+	}
+	.modal-content_login__bottom{
+		display: block;
+		margin-top: 24px;
+		text-align: center;
+	}
+	.modal-content_login__bottom .block-form__btn{
+		margin-right: 0;
+		width: 100%;
+		margin-bottom: 24px;
+	}
+	.modal-content_login{
+		min-height: 0;
+		border-radius: 32px;
+		padding: 16px 24px;
+		padding-bottom: 33px;
+	}
+
+	.sec-header-page{
+		min-height: 0;
+	}
+}
+
+@media screen and (max-width: 359px){
+	.block-pwp__el{
+		width: 50%;
+	}
+	.block-pwp__el:nth-child(1), .block-pwp__el:nth-child(3){
+		margin-right: 0;
+		width: 50%;
+	}
+	.pwp-el__title{
+		padding-right: 0;
 	}
 }

@@ -77,7 +77,7 @@ $('.btnOpen').on('click', function(){
   return false;
 });
 
-$('.modal-content__close, .modal__overlay').on('click', function(){
+$('.modal-content__close, .modal__overlay, .modal_login__overlay').on('click', function(){
   $(this).closest('.modal').fadeOut(400);
   unsetNoscroll();
   return false;
@@ -200,5 +200,16 @@ $('.question-el__top').on('click', function(){
 //   $('.sec-services-page__content').find('.sec-services-page__content-el').eq(wrap.index()).fadeIn(400);
 //   return false;
 // });
+
+$('.btn-pass-forgot').on('click', function(){
+  $('.wrap-login-form__el').hide();
+  $('#wrap-login-form-reset').fadeIn(400);
+  return false;
+});
+$('.btn-pass-back').on('click', function(){
+  $('.wrap-login-form__el').hide();
+  $('#wrap-login-form-first').fadeIn(400);
+  return false;
+});
 
 }); //end ready

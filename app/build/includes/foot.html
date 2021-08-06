@@ -130,7 +130,7 @@
 		<div class="modal__overlay overlay"></div>
 	</div>
 </div>
-<div class="modal modal_login" id="modal-login" style="display: block;">
+<div class="modal modal_login" id="modal-login">
 	<div class="modal__wrap">
 		<img src="../img/logo.svg" alt="" class="modal_login__logo">
 		<div class="modal__content modal-content modal-content_login">
@@ -142,17 +142,31 @@
 				<p class="modal-content_login__text text-info-2">New user? <a href="#" class="link text-bold">Ask your advisor</a> to help you complete your own PWP</p>
 				<div class="modal-content__content">
 					<div class="modal-content__form block-form">
-						<div class="block-form__el form-el">
-							<div class="form-el__placeholder">User ID</div>
-							<input type="text" class="form-el__inp inp form-inp">
-						</div>
-						<div class="block-form__el form-el">
-							<div class="form-el__placeholder">Password</div>
-							<input type="password" class="form-el__inp inp form-inp">
-						</div>
-						<div class="modal-content_login__bottom">
-							<button class="block-form__btn btn">Log in</button>
-							<a href="#" class="text-info-2 link text-bold">Forgot Password</a>
+						<div class="wrap-login-form">
+							<div class="wrap-login-form__el" id="wrap-login-form-first">
+								<div class="block-form__el form-el">
+									<div class="form-el__placeholder">User ID</div>
+									<input type="text" class="form-el__inp inp form-inp">
+								</div>
+								<div class="block-form__el form-el">
+									<div class="form-el__placeholder">Password</div>
+									<input type="password" class="form-el__inp inp form-inp">
+								</div>
+								<div class="modal-content_login__bottom">
+									<button class="block-form__btn btn">Log in</button>
+									<a href="#" class="text-info-2 link text-bold btn-pass-forgot">Forgot Password</a>
+								</div>
+							</div>
+							<div class="wrap-login-form__el" id="wrap-login-form-reset">
+								<div class="block-form__el form-el">
+									<div class="form-el__placeholder">User ID</div>
+									<input type="text" class="form-el__inp inp form-inp">
+								</div>
+								<div class="modal-content_login__bottom">
+									<button class="block-form__btn btn">Reset password</button>
+									<a href="#" class="text-info-2 text-bold btn-pass-back">Back</a>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -174,7 +188,7 @@
 
 <script src="../js/jquery-3.6.0.min.js"></script>
 <script src="../js/owl.carousel.min.js"></script>
-<script src="../js/main.js?ver=2"></script>
+<script src="../js/main.js?ver=3"></script>
 
 <script src="/PixelPerfect/pixelScreen.js"></script>
 </body>

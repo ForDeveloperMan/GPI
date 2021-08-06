@@ -167,6 +167,7 @@ body{
 	background-size: cover;
 	position: relative;
     background-attachment: fixed;
+    min-height: 100vh;
 	&::before{
 		content: '';
 		position: absolute;
@@ -542,4 +543,40 @@ body{
 			padding: 17px 33px;
 		}
 	}
+}
+
+.block-links-top{
+	&__wrap{
+		padding: 30px 0;
+	}
+}
+
+.block-articles-top{
+	&__wrap{
+		padding: 18px 0;
+		padding-bottom: 31px;
+	}
+	&__content{
+		display: flex;
+		justify-content: space-between;
+	}
+	&__left{
+		margin-right: 30px;
+		width: 100%;
+	}
+	&__right{
+		flex: none;
+		width: 309px;
+	}
+	.article-el{
+		margin-bottom: 21px;
+	}
+}
+
+.sec-blog{
+	&__wrap{
+		padding: 96px 0;
+		padding-bottom: 117px;
+	}
+	&__content{}
 }
