@@ -212,4 +212,15 @@ $('.btn-pass-back').on('click', function(){
   return false;
 });
 
+if ( $(window).width() <= 600 ) {
+  $('.block-info-2').addClass('owl-carousel');
+  $('.block-info-2').owlCarousel({
+    items: 1,
+    margin: 30,
+    nav: false,
+    dots: true,
+  });
+}
+
+
 }); //end ready
