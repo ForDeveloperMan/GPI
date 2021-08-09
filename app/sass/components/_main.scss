@@ -202,7 +202,10 @@ body{
 	&__links{
 		justify-content: space-between;
 		.links-menu__el{
-			margin-right: 0;
+			margin-right: 10px;
+			&:last-child{
+				margin-right: 0;
+			}
 		}
 		.links-menu__link{
 			font-family: 'Roboto';
@@ -468,14 +471,25 @@ body{
 			color: #252526;
 			margin-bottom: 20px;
 			display: block;
+			transition: .2s;
+			&:hover{
+				color: #18325E;
+			}
 		}
 		&-links{
 			li{
-				margin-bottom: 14px;
+				margin-bottom: 10px;
 				&, a{
 					font-family: 'Roboto';
 					font-size: 14px;
 					color: #252526;
+					line-height: 1.4;
+				}
+				a{
+					transition: .2s;
+					&:hover{
+						color: #18325E;
+					}
 				}
 			}
 		}
