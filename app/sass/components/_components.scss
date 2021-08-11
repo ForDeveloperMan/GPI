@@ -1,3 +1,104 @@
+@mixin mobMenu{
+	.links-menu__link_title{
+		display: block;
+	}
+	.top-menu__nav{
+		position: absolute;
+		left: -100%;
+		transition: .2s;
+		top: 100%;
+		max-height: 100vh;
+		min-height: 100vh;
+		overflow-y: auto;
+		&.active{
+			left: 0;
+		}
+		margin: 0;
+		width: 100%;
+		background: #FAF9F9;
+		padding: 28px 24px;
+		padding-bottom: 103px;
+		text-align: left;
+		.nav-menu__link{
+			display: block;
+		}
+		.links-menu__el{
+			margin: 0;
+			padding: 23px 0;
+			border-bottom: 1px solid #B39013;
+			margin-bottom: 0px;
+		}
+		.links-menu__link{
+			font-family: 'Roboto';
+			font-size: 18px;
+			font-weight: bold;
+			color: #767676;
+			letter-spacing: 0;
+			display: flex;
+		}
+		.links-menu__dropdown{
+			position: static;
+			padding: 0;
+			background: transparent;
+			display: block;
+			box-shadow: none;
+			border: 0;
+			margin-top: 26px;
+			padding: 0 10px;
+			margin-bottom: -4px;
+			display: none;
+		}
+		.dropdown-menu-el__links a{
+			font-size: 18px;
+			letter-spacing: 0px;
+		}
+		.dropdown-menu-el__links-el {
+		    margin-bottom: 24.5px;
+		    &:last-child{
+		    	margin-bottom: 0;
+		    }
+		}
+		.dropdown-menu-el__links{
+			padding-bottom: 0;
+			border: 0;
+			margin-bottom: 16px;
+		}
+		.links-2__link{
+			font-family: 'Roboto';
+			font-size: 18px;
+			letter-spacing: 0px;
+		}
+		.links-2__el {
+		    margin-bottom: 25px;
+		    &:last-child{
+		    	margin-bottom: 0;
+		    }
+		}
+	}
+	.links-menu__link_title{
+		position: relative;
+	}
+	.links-menu__el.active{
+		.links-menu__link_title::after{
+			transform: rotate(-90deg);
+		}
+		.line-1{
+			display: none;
+		}
+	}
+	.nav-menu__mob{
+		display: block;
+	}
+	.links-menu__link_title{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		svg{
+			display: block;
+		}
+	}
+}
+
 .links-menu{
 	display: flex;
 	align-items: center;
@@ -15,8 +116,15 @@
 		letter-spacing: 0.03em;
 		color: #767676;
 		transition: .2s;
+		display: inline-block;
 		&:hover{
 			color: #18325E;
+		}
+		&_title{
+			cursor: pointer;
+			svg{
+				display: none;
+			}
 		}
 		&.active{
 			color: #18325E;
@@ -106,6 +214,10 @@
 	&__links{
 		border-bottom: 1px solid #252526;
 		padding-bottom: 11px;
+		&:last-child{
+			padding-bottom: 0;
+			border-bottom: 0;
+		}
 		&-el{
 			margin-bottom: 14px;
 			&:last-child{
@@ -459,7 +571,7 @@
 		border-radius: 100%;
 	}
 	&__title{
-		margin-bottom: 28px;
+		margin-bottom: 24px;
 	}
 	&__text{
 		min-height: 106px;
@@ -659,6 +771,9 @@
 	}
 	&__title{
 		margin-bottom: 27px;
+		span{
+			display: inline-block;
+		}
 	}
 	&__link{
 		font-family: 'Roboto';
@@ -1585,3 +1700,4 @@ i{
 strong{
 	font-weight: bold;
 }
+
