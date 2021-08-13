@@ -2723,6 +2723,11 @@ body {
     font-weight: normal;
     font-size: 16px; }
 
+@media screen and (max-width: 1420px) {
+  .sec-header-page {
+    background-position: center;
+    background-attachment: unset; } }
+
 @media screen and (max-width: 1300px) {
   .sec-reviews__wrap {
     padding-top: 80px; }
@@ -2815,7 +2820,7 @@ body {
       font-size: 18px;
       letter-spacing: 0px; }
     .top-menu_fixed .top-menu__nav .links-2__el {
-      margin-bottom: 25px; }
+      margin-bottom: 28px; }
       .top-menu_fixed .top-menu__nav .links-2__el:last-child {
         margin-bottom: 0; }
   .top-menu_fixed .links-menu__link_title {
@@ -2835,7 +2840,7 @@ body {
   .top-menu__right {
     display: none !important; } }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1023px) {
   .container {
     padding: 0 24px; }
   .block-work {
@@ -2970,7 +2975,7 @@ body {
   .top-menu__right-btn {
     margin-left: 10px; } }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1023px) {
   .container {
     padding: 0 24px; }
   .links-menu__link {
@@ -3083,8 +3088,11 @@ body {
     background-color: #fff; } }
 
 @media screen and (max-width: 1023px) {
+  .work-el__text {
+    min-height: 0;
+    margin-bottom: 0; }
   .container {
-    padding: 0 16px; }
+    padding: 0 24px; }
   .top-menu__right {
     display: none !important; }
   .top-menu {
@@ -3166,7 +3174,7 @@ body {
       font-size: 18px;
       letter-spacing: 0px; }
     .top-menu .top-menu__nav .links-2__el {
-      margin-bottom: 25px; }
+      margin-bottom: 28px; }
       .top-menu .top-menu__nav .links-2__el:last-child {
         margin-bottom: 0; }
   .top-menu .links-menu__link_title {
@@ -3336,7 +3344,6 @@ body {
       align-items: center; }
     .work-el__text {
       margin-top: 14px;
-      margin-bottom: -10px;
       display: none; }
     .work-el__btn {
       width: 25px;
@@ -4098,9 +4105,17 @@ body {
       width: 100%;
       background-color: #fff; }
   .work-el__title {
-    font-size: 18px; } }
+    font-size: 18px; }
+  .question-el__title {
+    font-size: 18pt; }
+  .question-el__top {
+    padding: 16px; } }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 600px) {
+  .top-menu .top-menu__nav .links-2__el {
+    margin-bottom: 20px; } }
+
+@media screen and (max-width: 360px) {
   .block-pwp__el {
     width: 50%; }
   .block-pwp__el:nth-child(1), .block-pwp__el:nth-child(3) {

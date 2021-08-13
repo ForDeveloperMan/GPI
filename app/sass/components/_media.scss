@@ -1,3 +1,9 @@
+@media screen and (max-width: 1420px){
+	.sec-header-page{
+		background-position: center;
+		background-attachment: unset;
+	}
+}
 @media screen and (max-width: 1300px){
 	.container{
 		// max-width: 991px;
@@ -65,7 +71,7 @@
 	}
 }
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1023px){
 	.container{
 		// max-width: 768px;
 		padding: 0 24px;
@@ -283,7 +289,7 @@
 
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 1023px){
 	.container{
 		padding: 0 24px;
 	}
@@ -470,9 +476,14 @@
 
 }
 
+// 600
 @media screen and (max-width: 1023px){
+	.work-el__text{
+		min-height: 0;
+		margin-bottom: 0;
+	}
 	.container{
-		padding: 0 16px;
+		padding: 0 24px;
 	}
 	.top-menu__right{
 		display: none !important;
@@ -722,7 +733,7 @@
 		}
 		&__text{
 			margin-top: 14px;
-			margin-bottom: -10px;
+			// margin-bottom: -10px;
 			display: none;
 		}
 		&__btn{
@@ -1827,9 +1838,21 @@
 	.links-menu__dropdown{
 
 	}
+	.question-el__title{
+		font-size: 18pt;
+	}
+	.question-el__top{
+		padding: 16px;
+	}
 }
 
-@media screen and (max-width: 1023px){
+@media screen and (max-width: 600px){
+	.top-menu .top-menu__nav .links-2__el{
+		margin-bottom: 20px;
+	}
+}
+
+@media screen and (max-width: 360px){
 	.block-pwp__el{
 		width: 50%;
 	}

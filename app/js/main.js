@@ -57,7 +57,7 @@ $('head').append('<style>.noscroll{margin-right: '+getScrollBarWidth()+'px;}</st
 
 // });
 
-if( $(window).width() > 600){
+if( $(window).width() > 1023){
   let dropFix;
 
   $('.links-menu__dropdownWrap').on('mouseenter', function(){
@@ -94,12 +94,12 @@ $('.modal-content__close, .modal__overlay, .modal_login__overlay').on('click', f
 
 function checkMenu(){
   if ( $(window).scrollTop() > 1 ) {
-    if ( $(window).width() > 600 ) {
+    if ( $(window).width() > 1023 ) {
       $('.top-menu').addClass('top-menu_fixed');
       $('.top-menu_home').addClass('top-menu_active');
     }
   }else{
-    if ( $(window).width() > 600 ) {
+    if ( $(window).width() > 1023 ) {
       $('.top-menu').removeClass('top-menu_fixed');
       $('.top-menu_home').removeClass('top-menu_active');
     }
@@ -157,7 +157,7 @@ $('.form-el__inp').on('blur', function(){
 });
 
 
-if ( $(window).width() <= 600 ) {
+if ( $(window).width() <= 1023 ) {
   $('.work-el').each(function(){
     $(this).append('<svg class="work-el__btn" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12.5" cy="12.5" r="12" stroke="#B39013"/><line class="work-el__btn-line" x1="12.5" y1="6.5" x2="12.5" y2="18.5" stroke="#B39013" stroke-linecap="round"/><line x1="18.5" y1="12.5" x2="6.5" y2="12.5" stroke="#B39013" stroke-linecap="round"/></svg>');
   });
@@ -222,7 +222,7 @@ $('.btn-pass-back').on('click', function(){
   return false;
 });
 
-if ( $(window).width() <= 600 ) {
+if ( $(window).width() <= 1023 ) {
   $('.block-info-2').addClass('owl-carousel');
   $('.block-info-2').owlCarousel({
     items: 1,
