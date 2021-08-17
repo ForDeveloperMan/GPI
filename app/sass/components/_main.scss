@@ -155,6 +155,9 @@ body{
 		z-index: 10;
 	}
 	min-height: 100vh;
+	&__links{
+		display: none;
+	}
 	&__wrap{
 		padding-bottom: 58px;
 	}
@@ -436,7 +439,7 @@ body{
 			margin-top: 16px;
 		}
 		.block-form-2__img{
-			margin-right: 57px;
+			margin-right: 25px;
 		}
 		.block-form-2__content{
 			margin-top: 24px;

@@ -873,6 +873,13 @@ i{
 	    line-height: 1.2;
 		font-size: 32px;
 	}
+	h4{
+		font-weight: bold;
+		font-size: 16px;
+		color: #18325E;
+	    line-height: 1.2;
+	    margin-bottom: 8px;
+	}
 	ul{
 	    li{
 	    	list-style: inside;
@@ -881,6 +888,21 @@ i{
 	}
 	strong{
 		font-weight: bold;
+	}
+	&__hide{
+		overflow: hidden;
+		max-height: 400px;
+		&.show{
+			max-height: none;
+		}
+	}
+	&__btn{
+		margin-top: 16px;
+		&.active{
+			.linkArr__icon{
+				transform: rotate(-180deg);
+			}
+		}
 	}
 }
 
@@ -1701,3 +1723,15 @@ strong{
 	font-weight: bold;
 }
 
+.linkArr{
+	cursor: pointer;
+	font-family: 'Roboto';
+	font-weight: bold;
+	font-size: 16px;
+	color: #18325E;
+	display: inline-flex;
+	align-items: center;
+	&__icon{
+		margin-left: 8px;
+	}
+}

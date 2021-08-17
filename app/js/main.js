@@ -255,5 +255,17 @@ $('.links-menu__link_title').on('click', function(){
   }
 });
 
+$('.wrap-article__btn').on('click', function(){
+  if ( $(this).hasClass('active') ) {
+    $('.wrap-article__hide').removeClass('show');
+    $(this).removeClass('active');
+    $('html').animate({ scrollTop: ( $('.wrap-article__hide').closest('.sec-plan').offset().top - $('.top-menu').outerHeight() - 30 ) }, 0);
+  }else{
+    $('.wrap-article__hide').addClass('show');
+    $(this).addClass('active');
+  }
+  return false;
+});
+
 
 }); //end ready
