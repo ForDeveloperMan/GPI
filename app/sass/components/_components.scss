@@ -825,6 +825,11 @@
 		flex: none;
 		margin-right: 64px;
 		margin-top: 7px;
+		max-width: 310px;
+		border-radius: 32px;
+		height: 264px;
+		object-fit: cover;
+		object-position: center;
 	}
 	&__title{
 		margin-bottom: 20px;

@@ -1202,7 +1202,12 @@ img {
   .block-form-2__img {
     flex: none;
     margin-right: 64px;
-    margin-top: 7px; }
+    margin-top: 7px;
+    max-width: 310px;
+    border-radius: 32px;
+    height: 264px;
+    object-fit: cover;
+    object-position: center; }
   .block-form-2__title {
     margin-bottom: 20px; }
   .block-form-2__body {
@@ -2177,8 +2182,7 @@ body {
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
-  position: relative;
-  background-attachment: fixed; }
+  position: relative; }
   .sec-header-page::before {
     content: '';
     position: absolute;
@@ -3123,6 +3127,8 @@ body {
     background-color: #fff; } }
 
 @media screen and (max-width: 1023px) {
+  .block-terms__el-title {
+    margin-bottom: 16px; }
   .work-el__text {
     min-height: 0;
     margin-bottom: 0; }
@@ -3281,7 +3287,7 @@ body {
     width: 100%;
     max-width: 100%; }
   .title_sec {
-    font-size: 24px;
+    font-size: 32px;
     line-height: 1.25; }
   .modal-content__close {
     margin-top: 2px; }
@@ -3500,7 +3506,7 @@ body {
     margin-top: 27px; }
   .block-form-2__img {
     margin: 0;
-    max-width: 193px;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
     display: block;
@@ -3602,7 +3608,8 @@ body {
     margin: 0;
     height: 296px;
     object-fit: cover;
-    border-radius: 30px;
+    object-position: center;
+    border-radius: 32px;
     margin-right: 24px;
     margin-bottom: 0; }
   .sec-form_2 .block-form-2__body {
@@ -4016,7 +4023,7 @@ body {
     max-height: 173px;
     width: 100%; }
   .block-terms__el {
-    margin-bottom: 16px; }
+    margin-bottom: 48px; }
   .descrp-el-2__text {
     margin-top: 0; }
   .sec-terms_2 {
@@ -4170,7 +4177,7 @@ body {
   .work-el__title {
     font-size: 18px; }
   .question-el__title {
-    font-size: 18pt; }
+    font-size: 18px; }
   .question-el__top {
     padding: 16px; }
   .block-services {
@@ -4200,7 +4207,9 @@ body {
   .info-el-4 {
     padding: 16px 16px; }
   .block-info-4 .block-info-4__el {
-    margin-bottom: 0; } }
+    margin-bottom: 0; }
+  .terms-el__body {
+    max-width: 100%; } }
 
 @media screen and (max-width: 768px) {
   .sec-header__title {
@@ -4307,11 +4316,35 @@ body {
     margin-left: -15px;
     margin-right: -15px; }
   .block-pwp__el {
-    padding: 0 15px; } }
+    padding: 0 15px; }
+  .article-el_big__body {
+    margin-top: 8px; }
+  .block-articles-top__left {
+    margin-bottom: 32px; } }
 
 @media screen and (max-width: 600px) {
   .top-menu .top-menu__nav .links-2__el {
-    margin-bottom: 20px; } }
+    margin-bottom: 20px; }
+  .sec-facts .container {
+    padding: 0; }
+  .sec-facts .sec-facts__content {
+    position: relative; }
+    .sec-facts .sec-facts__content::before {
+      content: '';
+      position: absolute;
+      right: -1px;
+      top: 0;
+      height: 100%;
+      width: 1;
+      z-index: 10;
+      box-shadow: 6px 2px 20px 13px #efefef; }
+  .block-facts {
+    padding-left: 15px; }
+  .sec-facts__wrap {
+    padding-bottom: 25px;
+    padding-top: 25px; }
+  .sec-plan {
+    padding-top: 25px; } }
 
 @media screen and (max-width: 360px) {
   .sec-form_2 .block-form-2__img {

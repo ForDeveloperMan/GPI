@@ -268,4 +268,6 @@ $('.wrap-article__btn').on('click', function(){
 });
 
 
+
+
 }); //end ready
