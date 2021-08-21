@@ -614,7 +614,7 @@
 		max-width: 100%;
 	}
 	.title_sec{
-		font-size: 32px;
+		font-size: 24px;
 		line-height: 1.25;
 	}
 	.modal-content__close{
@@ -926,6 +926,7 @@
 	.block-form-2__img{
 		margin: 0;
 		max-width: 100%;
+		width: 240px;
 		margin-left: auto;
 		margin-right: auto;
 		display: block;
@@ -2026,6 +2027,7 @@
 	.block-form-2__img{
 		margin-left: auto;
 		margin-right: auto;
+		width: 100%;
 		margin-top: 0;
 		margin-bottom: 0;
 	}
@@ -2084,7 +2086,8 @@
 	}
 	.sec-form_2 .block-form-2__img{
 		max-width: 100%;
-		height: 224px;
+		min-height: 224px;
+		height: 57vw;
 		object-position: top;
 		margin-bottom: 16px;
 	}
@@ -2107,6 +2110,9 @@
 	}
 	.block-articles-top__left{
 		margin-bottom: 32px;
+	}
+	.title_sec{
+
 	}
 }
 
