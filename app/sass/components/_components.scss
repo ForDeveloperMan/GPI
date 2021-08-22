@@ -869,7 +869,7 @@ i{
 .wrap-article{
 	line-height: 1.7;
 	p{
-		min-height: 26.7px;
+		min-height: 16px;
 	}
 	h3{
 		font-family: 'PT Serif';
@@ -896,7 +896,7 @@ i{
 	}
 	&__hide{
 		overflow: hidden;
-		max-height: 400px;
+		max-height: 0px;
 		&.show{
 			max-height: none;
 		}
@@ -907,6 +907,21 @@ i{
 			.linkArr__icon{
 				transform: rotate(-180deg);
 			}
+		}
+	}
+}
+
+.article-flex{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	&__img{
+		max-width: 460px;
+		border-radius: 32px;
+		margin-left: 32px;
+		&_left{
+			margin-left: 0;
+			margin-right: 32px;;
 		}
 	}
 }

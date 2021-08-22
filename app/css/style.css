@@ -1236,7 +1236,7 @@ i {
 .wrap-article {
   line-height: 1.7; }
   .wrap-article p {
-    min-height: 26.7px; }
+    min-height: 16px; }
   .wrap-article h3 {
     font-family: 'PT Serif';
     font-weight: bold;
@@ -1256,13 +1256,25 @@ i {
     font-weight: bold; }
   .wrap-article__hide {
     overflow: hidden;
-    max-height: 400px; }
+    max-height: 0px; }
     .wrap-article__hide.show {
       max-height: none; }
   .wrap-article__btn {
     margin-top: 16px; }
     .wrap-article__btn.active .linkArr__icon {
       transform: rotate(-180deg); }
+
+.article-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; }
+  .article-flex__img {
+    max-width: 460px;
+    border-radius: 32px;
+    margin-left: 32px; }
+    .article-flex__img_left {
+      margin-left: 0;
+      margin-right: 32px; }
 
 .question-el {
   background: #FAF9F9;
@@ -2368,7 +2380,8 @@ body {
   .sec-form_2 .block-form-2__body {
     margin-top: 16px; }
   .sec-form_2 .block-form-2__img {
-    margin-right: 25px; }
+    margin-right: 25px;
+    max-width: 286px; }
   .sec-form_2 .block-form-2__content {
     margin-top: 24px; }
   .sec-form_2 .block-form-2__btn {
@@ -2788,7 +2801,9 @@ body {
 
 @media screen and (max-width: 1100px) {
   .terms-el__img {
-    max-width: 450px; } }
+    max-width: 450px; }
+  .article-flex__img {
+    max-width: 40vw; } }
 
 @media screen and (max-width: 1023px) {
   .top-menu_fixed .top-menu__btn {
@@ -3613,6 +3628,9 @@ body {
     border-radius: 32px;
     margin-right: 24px;
     margin-bottom: 0; }
+  .block-form-2_fix .block-form-2__img {
+    height: auto;
+    width: auto; }
   .sec-form_2 .block-form-2__body {
     margin-top: 0; }
   .sec-form_2 .sec-form__wrap {
@@ -4210,7 +4228,18 @@ body {
   .block-info-4 .block-info-4__el {
     margin-bottom: 0; }
   .terms-el__body {
-    max-width: 100%; } }
+    max-width: 100%; }
+  .article-flex {
+    flex-wrap: wrap; }
+    .article-flex__img {
+      order: 2;
+      max-width: 100%;
+      margin: 0;
+      margin-top: 16px; }
+    .article-flex__left {
+      order: 1; }
+  .sec-plan__wrap {
+    padding: 24px 16px; } }
 
 @media screen and (max-width: 768px) {
   .sec-header__title {
@@ -4284,7 +4313,6 @@ body {
   .links-menu_2 {
     justify-content: flex-start; }
     .links-menu_2 .links-menu__el {
-      width: 100%;
       text-align: center; }
       .links-menu_2 .links-menu__el .links-menu__link {
         display: block;
@@ -4309,7 +4337,7 @@ body {
     max-width: 100%;
     min-height: 224px;
     height: 57vw;
-    object-position: top;
+    object-position: center;
     margin-bottom: 16px; }
   .sec-form_2 .block-form-2__body {
     max-width: 100%; }
