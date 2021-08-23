@@ -264,7 +264,7 @@
 
 	.sec-form-contact{
 		.block-form-2{
-			display: block;
+			// display: block;
 		}
 		.block-form-2__img{
 			margin: 0;
@@ -486,8 +486,23 @@
 		padding-bottom: 40px;
 	}
 	.sec-form-contact__content{
-		padding: 0;
-		background-color: #fff;
+		// padding: 0;
+		// background-color: #fff;
+	}
+	.sec-form-contact{
+		.container{
+			max-width: 100%;
+			padding: 0;
+		}
+		&__content{
+			border-radius: 0;
+			padding: 32px 15px 
+		}
+		.block-form-2{
+			margin-left: auto;
+			margin-right: auto;
+			max-width: 660px;
+		}
 	}
 }
 
@@ -1857,11 +1872,15 @@
 	.sec-form-contact{
 		.block-form-2__img{
 			margin: 0;
+			margin-right: 24px;
 			width: 100%;
-			max-width: 100%;
-			height: 224px;
+			max-width: 240px;
+			height: 336px;
 			object-fit: cover;
 			border-radius: 32px;
+		}
+		.block-form-2__body{
+			margin-top: 0;
 		}
 	}
 	.sec-form-contact__wrap{
@@ -1976,6 +1995,23 @@
 	}
 	.sec-plan__wrap{
 		padding: 24px 16px;
+	}
+
+	.sec-contact__img{
+		width: 100%;
+	}
+	.block-contact{
+		flex-direction: row;
+		justify-content: space-between;
+		max-width: 100%;
+		&__el{
+			width: 100%;
+			max-width: 280px;
+			margin-bottom: 32px;
+		}
+	}
+	.sec-contact__content-map{
+		height: 300px;
 	}
 }
 
@@ -2139,6 +2175,11 @@
 	.title_sec{
 
 	}
+
+	.sec-form-contact .block-form-2{
+		display: flex;
+		max-width: 603px;
+	}
 }
 
 @media screen and (max-width: 600px){
@@ -2173,6 +2214,24 @@
 	}
 	.sec-plan{
 		padding-top: 25px;
+	}
+
+	.sec-form-contact .block-form-2{
+		display: block;
+	}
+	.sec-form-contact .block-form-2__img{
+		max-width: 100%;
+		height: 234px;
+		margin-bottom: 16px;
+	}
+	.sec-contact__wrap{
+		padding-bottom: 0;
+	}
+	.sec-contact__content-map{
+		height: 260px;
+	}
+	.block-contact{
+		flex-direction: column;
 	}
 }
 

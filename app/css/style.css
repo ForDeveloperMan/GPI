@@ -3011,8 +3011,6 @@ body {
     margin-top: -100px; }
   .sec-jointeam__wrap {
     padding-bottom: 60px; }
-  .sec-form-contact .block-form-2 {
-    display: block; }
   .sec-form-contact .block-form-2__img {
     margin: 0;
     margin-bottom: 20px; }
@@ -3137,9 +3135,16 @@ body {
     margin-top: 24px; }
   .sec-contact__wrap {
     padding-bottom: 40px; }
+  .sec-form-contact .container {
+    max-width: 100%;
+    padding: 0; }
   .sec-form-contact__content {
-    padding: 0;
-    background-color: #fff; } }
+    border-radius: 0;
+    padding: 32px 15px; }
+  .sec-form-contact .block-form-2 {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 660px; } }
 
 @media screen and (max-width: 1023px) {
   .block-terms__el-title {
@@ -4165,11 +4170,14 @@ body {
     max-width: 100%; }
   .sec-form-contact .block-form-2__img {
     margin: 0;
+    margin-right: 24px;
     width: 100%;
-    max-width: 100%;
-    height: 224px;
+    max-width: 240px;
+    height: 336px;
     object-fit: cover;
     border-radius: 32px; }
+  .sec-form-contact .block-form-2__body {
+    margin-top: 0; }
   .sec-form-contact__wrap {
     padding: 63px 0; }
   .block-form-2__body {
@@ -4239,7 +4247,19 @@ body {
     .article-flex__left {
       order: 1; }
   .sec-plan__wrap {
-    padding: 24px 16px; } }
+    padding: 24px 16px; }
+  .sec-contact__img {
+    width: 100%; }
+  .block-contact {
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 100%; }
+    .block-contact__el {
+      width: 100%;
+      max-width: 280px;
+      margin-bottom: 32px; }
+  .sec-contact__content-map {
+    height: 300px; } }
 
 @media screen and (max-width: 768px) {
   .sec-header__title {
@@ -4351,7 +4371,10 @@ body {
   .article-el_big__body {
     margin-top: 8px; }
   .block-articles-top__left {
-    margin-bottom: 32px; } }
+    margin-bottom: 32px; }
+  .sec-form-contact .block-form-2 {
+    display: flex;
+    max-width: 603px; } }
 
 @media screen and (max-width: 600px) {
   .top-menu .top-menu__nav .links-2__el {
@@ -4375,7 +4398,19 @@ body {
     padding-bottom: 25px;
     padding-top: 25px; }
   .sec-plan {
-    padding-top: 25px; } }
+    padding-top: 25px; }
+  .sec-form-contact .block-form-2 {
+    display: block; }
+  .sec-form-contact .block-form-2__img {
+    max-width: 100%;
+    height: 234px;
+    margin-bottom: 16px; }
+  .sec-contact__wrap {
+    padding-bottom: 0; }
+  .sec-contact__content-map {
+    height: 260px; }
+  .block-contact {
+    flex-direction: column; } }
 
 @media screen and (max-width: 360px) {
   .sec-form_2 .block-form-2__img {
